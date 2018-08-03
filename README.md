@@ -1,32 +1,13 @@
-# esx_handcuffs
-# Example of implementation (esx_policejob)
-# THIS RESOURCE WAS MODIFIED BY KRIZFROST
-Client
-```
-    if data2.current.value == 'handcuff' then
-      TriggerServerEvent('esx_policejob:handcuff', GetPlayerServerId(player))
-    end
-
-    if data2.current.value == 'unhandcuff' then
-      TriggerServerEvent('esx_policejob:unhandcuff', GetPlayerServerId(player))
-    end
- ```
- 
-Server
- ```
-    RegisterServerEvent('esx_policejob:handcuff')
-    AddEventHandler('esx_policejob:handcuff', function(source)
-      TriggerClientEvent('esx_handcuffs:cuff', source)
-    end)
-
-    RegisterServerEvent('esx_policejob:unhandcuff')
-    AddEventHandler('esx_policejob:unhandcuff', function(source)
-     TriggerClientEvent('esx_handcuffs:uncuff', source)
-    end)
-```
-
+# esx_handcuffs & esx_rope (Modified By KrizFrost)
+this script was created by scorpio686 & Modified by KrizFrost
+#IMPORTANT
+Do not remove any functions to do with esx_policejob:handcuff it is needed
+#What does it do?
+Adds Handcuffs & Rope to the store so users can buy them and use them
+handcuffs are used to cuff players.
+rope is used to drag players.
 # Based on:
 # https://github.com/TomGrobbe/Realistic-Handcuffs-FiveM
 # as welll as 
 # https://github.com/scorpio686/esx_handcuffs
-# I KRIZ FROST TAKE 0 CREDIT FOR ANYTHING DONE ON HERE ALL I DID WAS CHANGE A FEW THINGS AROUND.
+# I KRIZ FROST TAKE 0 CREDIT FOR ANYTHING DONE ON HERE ALL I DID WAS CHANGE A FEW THINGS AROUND and make it work to my liking.
